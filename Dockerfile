@@ -1,4 +1,4 @@
-FROM php:7.0-apache-jessie
+FROM php:7.1-apache-jessie
 #COPY src/ /var/www/html/
 COPY ./virtualhost.example /etc/apache2/sites-available/
 RUN apt-get update && apt-get install libzip-dev libpng-dev -y
