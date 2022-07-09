@@ -1,4 +1,4 @@
-FROM php:8.0-apache
+FROM php:7.4-apache
 #COPY src/ /var/www/html/
 COPY ./virtualhost.example /etc/apache2/sites-available/
 RUN apt-get update && apt-get install libzip-dev libpng-dev -y
