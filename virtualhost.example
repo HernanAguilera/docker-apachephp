@@ -1,0 +1,14 @@
+<VirtualHost *:80>
+    ServerAdmin webmaster@site.name
+    DocumentRoot "/var/www/html/site.name"
+    ServerName site.name
+    ServerAlias www.site.name
+    ErrorLog "logs/site.name-error_log"
+    CustomLog "logs/site.name-access_log" common
+
+    <Directory "/var/www/html/site.name">
+        Options FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
