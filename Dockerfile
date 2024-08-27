@@ -1,4 +1,4 @@
-FROM php:8.2-apache
+FROM php:8.3-apache
 #COPY src/ /var/www/html/
 COPY ./virtualhost.example /etc/apache2/sites-available/
 RUN apt-get update && apt-get install libzip-dev libjpeg-dev libpng-dev -y
